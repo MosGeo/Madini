@@ -1,0 +1,141 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3807980582" file="C:\Users\malibrah\OneDrive\Stanford\Project Cella\Papers\Multi-Mineral Inversion of X-Ray Fluorescence Data\Code\Madini.prj" location="C:\Users\malibrah\OneDrive\Stanford\Project Cella\Papers\Multi-Mineral Inversion of X-Ray Fluorescence Data\Code" name="Madini" preferred-package-location="C:\Users\malibrah\Desktop\CodeNew\Madini\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Madini</param.appname>
+    <param.icon>${PROJECT_ROOT}\Madini_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Madini_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Madini_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\Madini_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Madini_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.02</param.version>
+    <param.authnamewatermark>Mustafa A Al Ibrahim</param.authnamewatermark>
+    <param.email>Mustafa.Geoscientist@outlook.com</param.email>
+    <param.company>Basin and Petroleum System Modeling Group</param.company>
+    <param.summary />
+    <param.description>This work is sponsered by the Basin and Petroleum System Modeling Group at Stanford University. For more information about the group, please visit bpsm.stanford.edu or contact Allegra Hosford Scheirer at allegras@stanford.edu.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\Splash.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Basin and Petroleum System Modeling Group\Madini\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo>${PROJECT_ROOT}\InstallerSplash.png</param.logo>
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Madini\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Madini\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Madini\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\Madini</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MadiniV1</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.summary />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Madini.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package>
+      <file>${PROJECT_ROOT}\Data.csv</file>
+      <file>${PROJECT_ROOT}\Elements.csv</file>
+      <file>${PROJECT_ROOT}\Minerals.csv</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\analyzeMineralForAvailableElements.m</file>
+      <file>${PROJECT_ROOT}\AnalyzeMinerals.m</file>
+      <file>${PROJECT_ROOT}\CalculateMolecularWeight.m</file>
+      <file>${PROJECT_ROOT}\checkIfElementIsEssential.m</file>
+      <file>${PROJECT_ROOT}\ConstructAprimeMatrix.m</file>
+      <file>${PROJECT_ROOT}\DeconstructFormula.m</file>
+      <file>${PROJECT_ROOT}\FilterData.m</file>
+      <file>${PROJECT_ROOT}\GetExecutableFolder.m</file>
+      <file>${PROJECT_ROOT}\getPossibleMinerals.m</file>
+      <file>${PROJECT_ROOT}\InvertToMinerals.m</file>
+      <file>${PROJECT_ROOT}\PlotResultsTable.m</file>
+      <file>${PROJECT_ROOT}\selectFile.m</file>
+      <file>${PROJECT_ROOT}\selectMineralsByName.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Madini\for_testing" name="Madini.exe" optional="false">C:\Users\malibrah\OneDrive\Stanford\Project Cella\Papers\Multi-Mineral Inversion of X-Ray Fluorescence Data\Code\Madini\for_testing\Madini.exe</file>
+      <file location="${PROJECT_ROOT}\Madini\for_testing" name="splash.png" optional="false">C:\Users\malibrah\OneDrive\Stanford\Project Cella\Papers\Multi-Mineral Inversion of X-Ray Fluorescence Data\Code\Madini\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Madini\for_testing" name="readme.txt" optional="true">C:\Users\malibrah\OneDrive\Stanford\Project Cella\Papers\Multi-Mineral Inversion of X-Ray Fluorescence Data\Code\Madini\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
