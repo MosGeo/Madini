@@ -1,4 +1,4 @@
-function [results, resultsTable] = MassToVolumeFraction(massFractionTable, Minerals)
+function [resultsTable, results] = MassToVolumeFraction(massFractionTable, Minerals)
 %MassToVolumeFraction Converts mass fraction to volume fraction.
 %   [results, resultsTable] = MassToVolumeFraction(massFraction, Mineral) 
 %   converts the volumetric fraction to a mass fraction.

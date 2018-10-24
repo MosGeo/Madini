@@ -1,4 +1,4 @@
-function [Elements, Minerals] = LoadChemicalConstants(elementsFileName, chemicalFileName)
+function [Elements, Minerals] = LoadChemicalConstants(elementsFileName, mineralFileName)
 %LoadChemicalConstants Loads the chemical constants used in the analysis.
 %   [Elements, Minerals] = LoadChemicalConstants(chemicalConstantsFile) 
 %   returns two tables: Elements table is the table for elemental
@@ -10,6 +10,6 @@ function [Elements, Minerals] = LoadChemicalConstants(elementsFileName, chemical
 
 % Read the Excel sheets
 [Elements] = readtable(elementsFileName, 'ReadRowNames',true);
-[Minerals] = readtable(chemicalFileName, 'ReadRowNames',true);
+[Minerals] = readtable(mineralFileName, 'ReadRowNames',true);
 
 end
