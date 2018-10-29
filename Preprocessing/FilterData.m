@@ -6,6 +6,8 @@ function dataTable = FilterData(dataTable,elementsToUse)
 %   Mustafa Al Ibrahim (Mustafa.Geoscientist@outlook.com)
 %   Febuary, 2017
 
+%% Main
+
 % Filter data to specific elements
 dataTable = dataTable(:,elementsToUse);
 

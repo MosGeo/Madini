@@ -9,6 +9,8 @@ function Minerals = AnalyzeMinerals(Elements, Minerals)
 %   Mustafa Al Ibrahim (Mustafa.Geoscientist@outlook.com)
 %   Febuary, 2017
 
+%% Main
+
 % Go through the the given minerals
 nMinerals = size(Minerals,1);
 Minerals.Composition = cell(nMinerals,1);
