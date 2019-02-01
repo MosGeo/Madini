@@ -4,5 +4,5 @@ This code is a fixable modification of De Caritat et al (1994) algorithm to esti
 
 
 <div align="center">
-    <img width=800 src="https://github.com/MosGeo/Strata/blob/master/ReadmeFiles/Snapshot.png" alt="Snapshot" title="Snapshot of software"</img>
+    <img width=800 src="https://github.com/MosGeo/Madini/blob/master/ReadmeFiles/Snapshot.png" alt="Snapshot" title="Snapshot of software"</img>
 </div>
