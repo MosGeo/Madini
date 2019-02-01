@@ -6,3 +6,10 @@ This code is a fixable modification of De Caritat et al (1994) algorithm to esti
 <div align="center">
     <img width=800 src="https://github.com/MosGeo/Madini/blob/master/ReadmeFiles/Snapshot.png" alt="Snapshot" title="Snapshot of software"</img>
 </div>
+
+
+## How to use
+The code can be ran without interface in matlab as part of your normal script (check the notebook for example). You can also ran the interface in matlab. Finally, if you do not have Matlab, you can run the excutable (note that you might have to download and install a free Matlab runtime).
+
+## Referencing
+Please reference the two referneces below:
