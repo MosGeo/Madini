@@ -16,3 +16,6 @@ The algorithms uses linear optimization to solve for the best mineral combinatio
 
 ## Referencing
 Please reference the two referneces below:
+Al Ibrahim, M. A., and Mukerji, T., 2017, Thermal maturation effects on the elastic properties of organic-rich mudrocks: Presented at the SEG International Exposition and 87th Annual Meeting, 6 p. [link] (https://library.seg.org/doi/abs/10.1190/segam2017-17790635.1)
+
+De Caritat, P., Bloch, J., and Hutcheon, I, 1994, LPNORM: A linear programming normative analysis code: Computer and Geosciences, v. 20, no. 3, p. 313-347.
