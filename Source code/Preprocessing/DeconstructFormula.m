@@ -65,7 +65,7 @@ composition.nAtoms = nAtoms ;
     function [elements, number] = DeconstructParanthesis(chemicalFormulaPar)
        elements =[];
        number = [];
-        multiplierExpression = '\)[0-9.]*';
+        multiplierExpression = '\)[0-9.]+';
        [startIndex,endIndex] = regexp(chemicalFormulaPar,multiplierExpression);
        
        % Obtain the multiplier of the paranthesis
@@ -97,7 +97,7 @@ composition.nAtoms = nAtoms ;
         
         for i = 1:numel(startIndex)
             selectedElement = chemicalFormulaElem(startIndex(i):endIndex(i));
-            numberExpression = '[0-9.]*';
+            numberExpression = '[0-9.]+';
             [startIndexNumber,endIndexNumber] = regexp(selectedElement,numberExpression);
             if numel(startIndexNumber) == 0
                 number(i) = 1;

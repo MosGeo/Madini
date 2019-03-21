@@ -1,0 +1,10 @@
+function [objective] = lossFunc(x,A,b)
+    nMinerals = numel(b);
+    x = x{1,1:end}';
+    x(1:nMinerals) = x(1:nMinerals)/sum(x(1:nMinerals));
+    left  = A*x;
+    right = b;
+    objective   = sum((left-right).^2) + sum(x(nMinerals+1:end).^2);
+    %constraint2 = -sum(x(nMinerals+1:end).^2);
+    %constraint = [constraint1, constraint2];
+    %loss  = sum(-1*LSS(1,nMinerals)) +  1*LSS(1, (nMinerals+1):end);
